@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Título de la App -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detección de Micorrizas"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Nombres de los creadores -->
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jean Bermudes Mora y Ariana Delgado Salazar"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para cargar imagen -->
+
+    <!-- Botón para detección en tiempo real -->
+
+    <Button
+        android:id="@+id/buttonLoadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:text="Cargar y Clasificar Imagen"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authors" />
+
+    <Button
+        android:id="@+id/buttonRealTimeDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:text="Detección en Tiempo Real"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoadImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
